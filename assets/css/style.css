@@ -1,0 +1,49 @@
+body {
+    width: 1080px;
+    height: 720px;
+    background-image: url(../images/View.jpeg);
+}
+
+.headerDiv {
+    background-color: #3D5B5B;
+    margin: auto;
+    width: 100%;
+    /* border: 3px solid green;
+    padding: 10px; */
+}
+
+.navDiv {
+    background-color: #3D5B5B;
+    margin: auto;
+    width: 100%;
+    /* border: 3px solid green;
+    padding: 10px; */
+}
+
+.containerDiv {
+    background-color: #3D5B5B;
+    margin: auto;
+    width: 100%;
+    /* border: 3px solid green;
+    padding: 10px; */
+}
+
+li {
+    background-color: #3D5B5B;
+    margin: auto;
+    width: 100%;
+    /* border: 3px solid green;
+    padding: 10px; */
+}
+
+.contentDiv {
+    background-color: #3D5B5B;
+    margin: auto;
+    width: 100%;
+    /* border: 3px solid green;
+    padding: 10px; */
+}
+
+#firstNav {
+    background-color: #3D5B5B;
+}
