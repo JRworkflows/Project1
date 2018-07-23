@@ -1,0 +1,23 @@
+<div class="zsg-content-component">
+<h3><!-- react-text: 736 --> Conforming Loans<!-- /react-text --></h3>
+<table class="AverageRatesTable AverageRatesTable_md AverageRatesTable_animate zsg-tabular-numbers">
+<thead>
+    <tr>
+    <th class="AverageRatesTable-program">
+    Program</th>
+    <th class="AverageRatesTable-rate">
+    Rate</th>
+    <th class="AverageRatesTable-change">
+    <span class="AverageRatesTable-change-text">
+    <span class="AverageRatesTable-verbose">1W</span>
+    <!-- react-text: 745 --> Change<!-- /react-text --></span></th>
+    <th class="AverageRatesTable-apr">APR</th><th class="AverageRatesTable-change">
+    <span class="AverageRatesTable-change-text">
+    <span class="AverageRatesTable-verbose">1W</span
+    ><!-- react-text: 750 --> Change<!-- /react-text --></span>
+    </th></tr></thead>
+    <tbody><tr><td class="AverageRatesTable-program">
+    <span>
+    <span class="AverageRatesTable-verbose">30-Year Fixed Rate</span>
+    <span class="AverageRatesTable-concise">30-Yr.&nbsp;Fixed</span></span></td>
+    <td class="AverageRatesTable-rate"><span>
