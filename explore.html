@@ -74,12 +74,16 @@
         <form>
             <div class="form-group">
                 <label for="formGroupExampleInput">Find more information on your desired location by City</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="e.g. Sacramento">
+                <input type="text" class="form-control" id="input-city" placeholder="e.g. Sacramento">
             </div>
             <div class="form-group">
                 <label for="formGroupExampleInput2">Or Zip Code</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="e.g. 95815">
+                <input type="text" class="form-control" id="input-zip" placeholder="e.g. 95815">
             </div>
+                <button class="btn btn-primary" type="button" id="submit-btn">Submit</button>
+            <br>
+            <br>
+            
         </form>
     </div>
 
@@ -121,7 +125,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
 
 
     <!-- JS for Google Maps -->
@@ -139,6 +143,9 @@
         }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJAZvpjIihMIT97NpAcmLI15XV69mgWAA&callback=initMap" async defer></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+
+    <script src="js/app.js"></script>
 
 </body>
 
