@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     
     <!-- CSS  -->
@@ -37,13 +37,13 @@
             <!-- Nav Links -->
             <li><a href="https://jrworkflows.github.io/Project1/checklist.html">Loan Checklist</a></li>
             <li><a href="https://jrworkflows.github.io/Project1/rate.html">Find My Rate</a></li>
-            <li><a href="https://jrworkflows.github.io/Project1/explore.html">Find My Neighborhood</a></li>
+            <li><a href="https://jrworkflows.github.io/Project1/explore.html">Explore my Community</a></li>
                         </ul>
             <!-- Mobile Nav Links -->
                         <ul id="nav-mobile" class="sidenav">
                                 <li><a href="https://jrworkflows.github.io/Project1/checklist.html">Loan Checklist</a></li>
                                 <li><a href="https://jrworkflows.github.io/Project1/rate.html">Find My Rate</a></li>
-                                <li><a href="https://jrworkflows.github.io/Project1/myneighborhood/index.html">Find My Neighborhood</a></li>
+                                <li><a href="https://jrworkflows.github.io/Project1/myneighborhood/index.html">Explore my Community</a></li>
                         </ul>
                         <a href="index.html" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     </div>
@@ -76,7 +76,7 @@
                 <label for="formGroupExampleInput3"></label>
                 <input type="text" class="form-control" id="input-phone" placeholder="(555) 555-5555">
             </div>
-            <button class="btn btn-primary" type="button" id="add-train-btn">Submit</button>
+            <button class="btn btn-primary" type="button" id="submit-btn">Submit</button>
             <br>
             <br>
             
@@ -84,60 +84,11 @@
         </form>
     </div>
 
-    <script>
 
-    // Initialize Firebase
-var config = {
-    apiKey: "AIzaSyCMqQng6um5HSQ_tOfRZJjKGUIUoIgSf7g",
-    authDomain: "project1-15d74.firebaseapp.com",
-    databaseURL: "https://project1-15d74.firebaseio.com",
-    projectId: "project1-15d74",
-    storageBucket: "project1-15d74.appspot.com",
-    messagingSenderId: "49586158350"
-  };
-
-firebase.initializeApp(config);
-
-var database = firebase.database();
-
-
-$('#add-train-btn').on('click', function () {
-
-    // Grabs user input
-    var inputName = $("#input-name").val().trim();
-    var inputEmail = $("#input-email").val().trim();
-    var inputPhone = $("#input-phone").val().trim();
-
-
-    // Creates local "temporary" object for holding user input
-    var userInput = {
-        name: inputName,
-        email: inputEmail,
-        phone: inputPhone,
-    };
-    // Uploads user input to the database
-
-    database.ref().push(userInput);
-
-    // Logs everything to console
-    console.log(inputName.name);
-    console.log(inputEmail.email);
-    console.log(inputPhone.phone);
-
-    // Clears all of the text-boxes
-    $("#input-name").val("");
-    $("#input-email").val("");
-    $("#input-phone").val("");
-
-
-})
-
-
-</script>
-
+ 
     <!--Firebase link-->
 
-    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
@@ -145,7 +96,6 @@ $('#add-train-btn').on('click', function () {
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
-    <script src="assets/js/app.js"></script>
 <!-- Footer -->
                      <footer class="page-footer teal">
 <!-- Container for Company Bio and links -->
@@ -179,8 +129,9 @@ $('#add-train-btn').on('click', function () {
         <!--  Scripts-->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="js/materialize.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
         <script src="js/init.js"></script>
-
+        <script src="js/app.js"></script>
 </body>
 
-</html>/
+</html>
