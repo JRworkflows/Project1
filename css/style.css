@@ -63,3 +63,16 @@ footer.page-footer {
 #map {
     height: 300px;
 }
+
+#checklist {
+    font-size: 16px;
+    line-height: 16px;
+    background-color: #009688;
+    color: #FFFFFF;
+    padding-right: 5px;
+}
+
+#checklist-header {
+    text-align: center;
+    font-size: 45px;
+}
