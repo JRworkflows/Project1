@@ -13,12 +13,13 @@ firebase.initializeApp(config);
 var database = firebase.database();
 
 
-$('#add-train-btn').on('click', function () {
+$('#submit-btn').on('click', function () {
 
     // Grabs user input
     var inputName = $("#input-name").val().trim();
     var inputEmail = $("#input-email").val().trim();
     var inputPhone = $("#input-phone").val().trim();
+    
 
 
     // Creates local "temporary" object for holding user input
@@ -36,10 +37,13 @@ $('#add-train-btn').on('click', function () {
     console.log(inputEmail.email);
     console.log(inputPhone.phone);
 
+
+
     // Clears all of the text-boxes
     $("#input-name").val("");
     $("#input-email").val("");
     $("#input-phone").val("");
+  
 
 
 })
