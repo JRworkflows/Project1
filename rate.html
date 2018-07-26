@@ -60,9 +60,25 @@
             <div class="headerDiv">
                     <h1>The Real Deal Estate: Zach</h1>
                 </div>
+<!-- Skype -->
+        <div id="skype">
+            <p>Include best contact time. Flexiable availabilty!</p>
+<!-- Skype BOT Bubble -->
+            <span class="skype-button bubble "></span>
+            <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+<!-- Skype DOM with BOT ID..........microappID 2cbabb42-bfba-4b31-a28a-3d22db06e7eb -->
+            <div class="skype-button bubble" data-bot-id="zmmort916"></div>
+            <!-- Skype chat -->
+            <div class="skype-chat" data-bot-id="zmmort916"></div>
 
-        <div id="zillow"> THIS IS WHERE WE WILL PULL DATA FROM ZILLOW API TO DISPLAY RATE DATA</div>
+            <div class="skype-chat"></div>
 
+
+
+        </div>
+
+
+<!-- Form -->
         <form>
             <div class="form-group">
                 <label for="formGroupExampleInput">Name</label>
@@ -103,19 +119,19 @@
                 <div class="container">
                     <div class="row">
                         <div class="col l6 s12">
-                          <h5 class="white-text">Company Bio</h5>
-                          <p class="grey-text text-lighten-4">Zach is a Senior Financial Loan Officer with years of experience in his position. If you are looking for friendly personal service do not hesitate to reach Mr. Malgieri.</p>
+                            <h5 class="white-text">My Employer</h5>
+                            <ul>
+                                <li>
+                                    <a class="white-text" href="https://mortgagesolutions.net/">Mortgage Solutions Financial</a>
+                                </li>
+                            </ul>
                         </div>
-                    <div class="col l3 s12">
-                        <h5 class="white-text">Settings</h5>
-                        <ul>
-                            <li><a class="white-text" href="#!">Link 1</a></li>
-                        </ul>
-                    </div>
-                    <div class="col l3 s12">
-                        <h5 class="white-text">Connect</h5>
-                        <ul>
-                            <li><a class="white-text" href="#!">Link 1</a></li>
+                        <div class="col l3 s12">
+                            <h5 class="white-text">Branch Locations</h5>
+                            <ul>
+                                <li>
+                                    <a class="white-text" href="https://mortgagesolutions.net/branches-locations/">Seach near me</a>
+                                </li>
                         </ul>
                     </div>
                     </div>
@@ -133,6 +149,18 @@
         <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
         <script src="js/init.js"></script>
         <script src="js/app.js"></script>
+<!-- Skype JS -->
+<script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js">
+
+SkypeWebControl.SDK.start();
+
+SkypeWebControl.SDK.Chat.startChat({
+    ConversationId: 'zmmort916',
+    ConversationType: 'agent'
+});
+
+</script>
+
 </body>
 
 </html>
