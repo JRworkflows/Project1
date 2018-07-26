@@ -1,21 +1,14 @@
-# Public1
-<!-- Loan Officerz -->
+# Malgieri VERSION 1.0 07/2018 
 
-<!-- Create html including the following elements; header, footer, and two rows between the top and bottom that will include (pg1) metadata, a bio, ratings, (pg2) and links to the API page -->
+# This website was created for Zach Malgieri
+# Mortgage Loan Officer employed by Mortgage Solutions Financial.
 
+## Our first group project UCD BC 07/28/2018
+### Members: Jameson Perhac, Juan Romo, Lateef Raheem, Joanna Porcayo.
 
-<!-- Style both pages which should include animations, media queries, mobile responsiveness and unique color schemes and text fonts -->
+# Facilitates the user to efficiently find the following:
+## Able to connect via LinkedIn, use quick links to navigate to interested pages regarding contact information, loan options and employer website. Request call back form and/or apply directly for a mortgage loan.
 
-
-<!-- Create Lead Form that will work well with both API and Firebase -->
-
-
-<!-- Use Javascript and jQuery to initialize first API using maps for information on current demographic or zillow -->
-
-
-<!-- Utilize the second API for zillow or maps to use zip code or location to generate the aggregate data -->
-
-
-<!-- Prepare presentation timing, main features, issues we had, and future possibilities/ obstacles -->
-
+#### No special browser needed. Mobile capable.
+#### Materialize framework license provided in CSS file.
 
