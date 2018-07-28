@@ -64,3 +64,8 @@ footer.page-footer {
     height: 300px;
 }
 
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
