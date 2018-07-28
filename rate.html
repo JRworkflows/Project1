@@ -64,14 +64,12 @@
         <div id="skype">
             <p>Include best contact time. Flexible availability!</p>
 <!-- Skype BOT Bubble -->
-            <span class="skype-button bubble "></span>
-            <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
-<!-- Skype DOM with BOT ID..........microappID 2cbabb42-bfba-4b31-a28a-3d22db06e7eb -->
-            <div class="skype-button bubble" data-bot-id="zmmort916"></div>
-            <!-- Skype chat -->
-            <div class="skype-chat" data-bot-id="zmmort916"></div>
+<span class="skype-button bubble " data-contact-id="lazygirl_916@yahoo.com"></span>
 
-            <div class="skype-chat"></div>
+<div class="skype-chat" data-bot-id="lazygirl_916@yahoo.com"></div>
+
+<!-- Skype DOM with BOT ID..........microappID 2cbabb42-bfba-4b31-a28a-3d22db06e7eb -->
+           
 
 
 
@@ -143,21 +141,19 @@
         </div>
              </footer>
         </div>
-        <!--  Scripts-->
+       
+        <!-- Skype JS -->
+        <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+         <!--  Scripts-->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="js/materialize.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
         <script src="js/init.js"></script>
         <script src="js/app.js"></script>
-<!-- Skype JS -->
-<script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js">
 
-SkypeWebControl.SDK.start();
 
-SkypeWebControl.SDK.Chat.startChat({
-    ConversationId: 'zmmort916',
-    ConversationType: 'agent'
-});
+
+
 
 </script>
 

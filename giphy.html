@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Favorite Movies</title>
+  <style type="text/css">
+    button,
+    div,
+    form,
+    input {
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+<!-- Giphy btn -->
+
+    <button id="loan-btn">CLICK ME</button>
+   <div id="images">
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+      // Event listener for our cat-button
+    $("#loan-btn").on("click", function() {
+
+      let houseImg = $(this).attr("loan-btn");
+
+      let queryURL = "https://api.giphy.com/v1/gifs/search?q=" + houseImg + "&api_key=dc6zaTOxFJmzC&limit=10";
+      //ajax GET request
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        })
+        // after data comes back
+        .then(function(response) {
+
+         // Saving the image_original_url property
+          var imageUrl = response.data.image_original_url;
+
+          // Creating and storing an image tag
+           let loanImg = $("<img>");
+
+           //Setting the loanImg src attribute to imageUrl
+           loanImg.attr("src", imageUrl);
+           loanImg.attr("alt", "loan-image");
+
+           //prepending the loanImg to the images div
+
+            $("#loan-images").prepend(loanImg);
+
+        });
+        
+      });
+
+</script>
+</body>
+
+</html>
