@@ -12,21 +12,45 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 
+function validateContact(customerContact) {
+   if (!customerContact.name) {
+    return (false) }
+}
+// attempted reg ex data validation 
+// !!(new RegExp('^\\([0-9]{3}\\)[0-9]{3}-[0-9]{4}$').exec('(345)949-0494'))
 
-$('#submit-btn').on('click', function () {
+//function for cleaning up customer entered input (phone number)
+function cleanUpPhoneInput(telly) {
+    var cleanPhoneNumer = ""
+    for (var i = 0; i < telly.length; i++) {
+        if ('0123456789'.indexOf(telly[i]) !== -1) {
+            cleanPhoneNumer += telly[i]
+        }
+    } 
+    if (cleanPhoneNumer.length != 10) {
+        return (false)
+    }
+    var dbPhoneNumber = "("+ cleanPhoneNumer.substr(0,3) + ") " + cleanPhoneNumer.slice(3,6) + "-" + cleanPhoneNumer.slice(6,10) 
+    return dbPhoneNumber
+}
+
+
+$('#customer-form').on('submit', function () {
 
     // Grabs user input
     var inputName = $("#input-name").val().trim();
     var inputEmail = $("#input-email").val().trim();
     var inputPhone = $("#input-phone").val().trim();
-    
-
-
+    var cleanedPhone = cleanUpPhoneInput(inputPhone)
+    if (!cleanedPhone) {
+        return false;
+    }
     // Creates local "temporary" object for holding user input
     var userInput = {
         name: inputName,
         email: inputEmail,
-        phone: inputPhone,
+        phone: cleanedPhone,
+
     };
     // Uploads user input to the database
 
@@ -35,7 +59,7 @@ $('#submit-btn').on('click', function () {
     // Logs everything to console
     console.log(inputName.name);
     console.log(inputEmail.email);
-    console.log(inputPhone.phone);
+    console.log(cleanedPhone.phone);
 
 
 
