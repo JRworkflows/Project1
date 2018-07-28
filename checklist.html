@@ -54,6 +54,65 @@
             </a>
         </div>
     </nav>
+
+    <style type="text/css">
+        button,
+        div,
+        form,
+        input {
+          margin: 10px;
+        }
+      </style>
+    </head>
+    
+    <body>
+    <!-- Giphy btn -->
+    
+        <button id="loan-btn">CLICK ME</button>
+       <div id="loan-images">
+      </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+    
+          // Event listener for our house-button
+        $("#loan-btn").on("click", function() {
+    
+          let houseImg = $(this).attr("id");
+    
+    
+          let queryURL = "https://api.giphy.com/v1/gifs/gQOZBeDohaDkc?api_key=dc6zaTOxFJmzC&limit=10";
+          //ajax GET request
+          console.log(houseImg)
+    
+            
+            $.ajax({
+                url: queryURL,
+                method: "GET"
+            })
+            
+            // after data comes back
+            .then(function(response) {
+    
+             // Saving the image_original_url property
+             var imageUrl = response.data.images.fixed_width.url
+    
+              // Creating and storing an image tag
+               let loanImg = $("<img>");
+    
+               //Setting the loanImg src attribute to imageUrl
+               loanImg.attr("src", imageUrl);
+               loanImg.attr("alt", "loan-image");
+    
+               //prepending the loanImg to the images div
+    
+                $("#loan-images").prepend(loanImg);
+    
+            });
+            
+          });
+    
+    </script>
     <div class="container">
         <br>
         <div id="checklist">

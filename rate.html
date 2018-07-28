@@ -78,11 +78,6 @@
         </div>
         <!-- Skype -->
         <div id="skype">
-            <p>Include best contact time. Flexiable availabilty!</p>
-            <!-- Skype BOT Bubble -->
-            <span class="skype-button bubble " data-contact-id="lazygirl_916@yahoo.com"></span>
-
-            <div class="skype-chat" data-bot-id="lazygirl_916@yahoo.com"></div>
 
             <!-- Skype DOM with BOT ID..........microappID 2cbabb42-bfba-4b31-a28a-3d22db06e7eb -->
 
@@ -92,21 +87,23 @@
         </div>
 
 
-        <!-- Form -->
-        <form>
+<!-- Form -->
+        <form id = "customer-form">
+
             <div class="form-group">
                 <label for="formGroupExampleInput">Name</label>
-                <input type="text" class="form-control" id="input-name" placeholder="Joe Smith">
+                <input type="text" class="form-control" id="input-name" placeholder="Joe Smith" required/>
             </div>
             <div class="form-group"> Email Address
                 <label for="formGroupExampleInput2">Name</label>
-                <input type="text" class="form-control" id="input-email" placeholder="JoeSmith@gmail.com">
+                <input type="email" class="form-control" id="input-email" placeholder="JoeSmith@gmail.com" required/>
             </div>
-            <div class="form-group"> Phone Number
+            <div class="form-group"> Phone Number 
                 <label for="formGroupExampleInput3"></label>
-                <input type="text" class="form-control" id="input-phone" placeholder="(555) 555-5555">
+                <input type="tel" class="form-control" id="input-phone" placeholder="(555) 555-5555" required = "required"/>
             </div>
-            <button class="btn btn-primary" type="button" id="submit-btn">Submit</button>
+            <button class="btn btn-primary" type="submit" id="submit-btn">Submit</button>
+
             <br>
             <br>
 
