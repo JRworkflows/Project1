@@ -105,7 +105,7 @@
         <!-- End of about section -->
         <!--   Icon Section   -->
 
-        <div class="row center" >
+        <div class="row center">
             <div class="col s12 m6">
                 <div class="icon-block">
                     <a id="linkedin" href="https://www.linkedin.com/in/zach-malgieri-a9961a61/" class="brand-logo">
@@ -140,11 +140,8 @@
                 <h5 class="white-text">Company Bio</h5>
                 <p class="grey-text text-lighten-4">
                     Zach Malgieri NMLS #1311085
-                    <br>
-                    81 Blue Ravine Rd (1.77 mi)
-                    Folsom, California 95630
-                    <br>
-                    (707) 365-5343
+                    <br> 81 Blue Ravine Rd (1.77 mi) Folsom, California 95630
+                    <br> (707) 365-5343
                 </p>
             </div>
             <div class="col l3 s12">
@@ -176,18 +173,18 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
+        // Example queryURL for Giphy API
+        var queryURL = "HELLO";
 
-         // Example queryURL for Giphy API
-    var queryURL = "HELLO";
-
-$(document).ready(function(){
-$.ajax({ url: "database/update.html",
-        context: document.body,
-        success: function(){
-           alert("done");
-        }});
-});
-
+        $(document).ready(function () {
+            $.ajax({
+                url: "database/update.html",
+                context: document.body,
+                success: function () {
+                    alert("done");
+                }
+            });
+        });
     </script>
 
     <!--  Scripts-->
